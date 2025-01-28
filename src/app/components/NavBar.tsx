@@ -70,7 +70,7 @@ const NavBar = () => {
 
           <div className="hidden md:flex space-x-6 pl-3 items-center">
             <Link
-              href="/api/auth/signin"
+              href="/#contact"
               className="px-4 py-2 bg-orange-700 text-white font-extrabold rounded-full "
             >
               Contact Me

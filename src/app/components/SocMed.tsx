@@ -9,7 +9,7 @@ const SocialMediaSection: React.FC = () => {
   const [message, setMessage] = useState("");
 
   return (
-    <section className="bg-black py-8 md:py-16 mb-10">
+    <section className="bg-black py-8 md:py-16 mb-10" id="contact">
       <div className="max-w-6xl mx-auto text-center px-4 md:px-8">
         {/* Header */}
         <h2 className="text-3xl sm:text-4xl font-extrabold text-transparent bg-gradient-to-r from-amber-400 to-amber-800 bg-clip-text mb-11">
