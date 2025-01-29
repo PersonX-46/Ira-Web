@@ -8,16 +8,13 @@ import { Button } from "./ui/moving-border";
 import Link from "next/link";
 
 export const HeroSection = () => {
-  const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
-`;
   return (
-    <div className="relative bg-black text-gray-200 min-h-screen flex items-center justify-center px-6 py-16 sm:px-10 md:px-16 lg:px-20 md:py-24">
+    <div className="relative bg-black text-gray-200 min-h-screen flex items-center justify-center px-6 py-16 sm:px-10 md:px-16 lg:px-24 md:py-24">
       <BackgroundLines className="absolute flex items-center justify-center w-full flex-col px-4">
         {/* Hero Content */}
-        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between max-w-4xl mx-auto gap-6">
+        <div className="relative z-10 flex flex-col-reverse md:flex-row items-center justify-between w-full max-w-6xl mx-auto gap-12">
           {/* Text Section */}
-          <div className="flex flex-col items-center text-center md:text-left md:items-start">
-            {/* Intro Text */}
+          <div className="flex flex-col items-center text-center md:text-left md:items-start w-full md:w-1/2">
             <motion.p
               className="text-lg font-bold text-white mb-2"
               initial={{ opacity: 0, y: -20 }}
@@ -27,35 +24,31 @@ export const HeroSection = () => {
               Hello There! 👋
             </motion.p>
 
-            {/* Typewriter Heading */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-600 to-blue-600">
                 <TypeWriter />
               </span>
             </h1>
 
-            {/* Description */}
             <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-6 max-w-xl">
               Welcome to the portfolio of a{" "}
               <strong className="text-orange-600">
                 creative graphic designer
               </strong>
               . Dive into a world of bold designs and endless creativity where
-              ideas are brought to life in the most vibrant ways.
+              ideas come to life in vibrant ways.
             </p>
-            <div>
-              <Button
-                borderRadius="1.75rem"
-                className="bg-white font-extrabold dark:bg-[#25110b] text-black dark:text-white border-neutral-200 dark:border-black"
-              >
-                <Link href="/resume.pdf" passHref>
-                    Download CV
-                </Link>
-              </Button>
-            </div>
+
+            <Button
+              borderRadius="1.75rem"
+              className="bg-white font-extrabold dark:bg-[#25110b] text-black dark:text-white border-neutral-200 dark:border-black"
+            >
+              <Link href="/resume.pdf" passHref>
+                Download CV
+              </Link>
+            </Button>
           </div>
 
-          {/* Image Section with Ripple Animation */}
           <div className="relative flex items-center justify-center md:ml-10 mt-10 md:mt-0">
             {/* Gradient Background */}
             <div className="absolute w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] lg:w-[350px] lg:h-[350px] bg-gradient-to-r bg-white rounded-full z-10 "></div>
