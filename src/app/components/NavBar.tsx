@@ -3,7 +3,7 @@ import { XIcon, MenuIcon } from "@heroicons/react/outline";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../assets/pfp1.png";
+import Logo from "../assets/pfp.png";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
