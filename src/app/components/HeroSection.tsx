@@ -24,8 +24,8 @@ export const HeroSection = () => {
               Hello There! 👋
             </motion.p>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-600 to-blue-600">
+            <h1 className="text-4xl w-full sm:text-5xl md:text-6xl font-extrabold leading-tight">
+              <span className="bg-clip-text w-full text-transparent bg-gradient-to-r from-orange-600 to-blue-600 block min-h-[72px] sm:min-h-[86px] md:min-h-[104px] overflow-hidden">
                 <TypeWriter />
               </span>
             </h1>
@@ -66,21 +66,23 @@ export const HeroSection = () => {
             </div>
 
             {/* Ripple Effects */}
-            <motion.div
-              className="absolute w-[390px] h-[390px] sm:w-[390px] sm:h-[390px] lg:w-[390px] lg:h-[390px] rounded-full blur-3xl bg-white"
-              style={{
-                background: "conic-gradient(#fdba74, #ea580c, #fb923c)",
-              }}
-              animate={{
-                rotate: 360, // Rotate the circle 360 degrees
-                backgroundPosition: ["0% 50%", "100% 50%"], // Animate gradient flow
-              }}
-              transition={{
-                repeat: Infinity, // Continuous animation
-                duration: 4, // Total animation duration
-                ease: "linear", // Smooth and continuous rotation
-              }}
-            />
+            <div className="absolute w-[390px] h-[390px] rounded-full blur-3xl overflow-hidden">
+              <motion.div
+                className="absolute inset-0 w-full h-full rounded-full blur-3xl bg-white will-change-transform"
+                style={{
+                  background: "conic-gradient(#fdba74, #ea580c, #fb923c)",
+                }}
+                animate={{
+                  rotate: 360,
+                  backgroundPosition: ["0% 50%", "100% 50%"],
+                }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 4,
+                  ease: "linear",
+                }}
+              />
+            </div>
           </div>
         </div>
       </BackgroundLines>

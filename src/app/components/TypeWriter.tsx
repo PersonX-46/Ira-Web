@@ -2,7 +2,7 @@ import TypewriterComponent from 'typewriter-effect'; // Ensure you have this ins
 
 const TypeWriter = () => {
   return (
-    <div className="flex lg:items-start lg:justify-start items-center justify-center">
+    <div className="flex w-full lg:items-start lg:justify-start items-center justify-center">
       <div className="text-white mr-3">
         <h1>{"I'm"}</h1>
       </div>
