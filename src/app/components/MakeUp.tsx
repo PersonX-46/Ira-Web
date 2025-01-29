@@ -56,7 +56,7 @@ export function FocusCardsDemo() {
   ];
 
   return (
-    <div className="bg-black">
+    <div className="bg-black py-12 px-6 sm:px-8 lg:px-16">
       <FocusCards cards={cards} />
     </div>
   );
