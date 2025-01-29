@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "@/app/assets/pfp1.png";
+import logo from "@/app/assets/pfp.png";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
