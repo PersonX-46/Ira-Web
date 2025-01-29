@@ -9,7 +9,7 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-8/12">
+    <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-[9999] w-8/12 overflow-visible">
       <div className="relative bg-transparent rounded-full px-6 py-3 shadow-xl">
         {/* Gradient Outline */}
         <div className="absolute inset-0 -z-10 rounded-full bg-gradient-to-r from-orange-700 via-orange-500 to-orange-800 p-[2px]">
@@ -80,25 +80,25 @@ const NavBar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="absolute top-full left-1/2 transform -translate-x-1/2 bg-white shadow-lg rounded-lg py-4 mt-2 w-64">
+          <div className="absolute top-full left-1/2 transform -translate-x-1/2 bg-black border-2 border-orange-600 shadow-lg rounded-lg py-4 mt-2 w-64">
             <div className="flex flex-col items-center space-y-4">
               <Link
                 href="/"
-                className="text-orange-600 font-bold hover:text-orange-400"
+                className="text-orange-400 font-bold hover:text-orange-300"
                 onClick={() => setIsOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/#about"
-                className="text-orange-600 font-bold hover:text-orange-400"
+                className="text-orange-400 font-bold hover:text-orange-300"
                 onClick={() => setIsOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="/#work"
-                className="text-orange-600 font-bold hover:text-orange-400"
+                className="text-orange-400 font-bold hover:text-orange-300"
                 onClick={() => setIsOpen(false)}
               >
                 Work
@@ -119,3 +119,4 @@ const NavBar = () => {
 };
 
 export default NavBar;
+

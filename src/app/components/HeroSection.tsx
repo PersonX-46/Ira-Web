@@ -25,7 +25,7 @@ export const HeroSection = () => {
             </motion.p>
 
             <h1 className="text-4xl w-full sm:text-5xl md:text-6xl font-extrabold leading-tight">
-              <span className="bg-clip-text w-full text-transparent bg-gradient-to-r from-orange-600 to-blue-600 block min-h-[72px] sm:min-h-[86px] md:min-h-[104px] overflow-hidden">
+              <span className="bg-clip-text  w-full text-transparent bg-gradient-to-r from-orange-600 to-blue-600">
                 <TypeWriter />
               </span>
             </h1>
@@ -66,7 +66,7 @@ export const HeroSection = () => {
             </div>
 
             {/* Ripple Effects */}
-            <div className="absolute w-[390px] h-[390px] rounded-full blur-3xl overflow-hidden">
+            <div className="absolute w-[390px] h-[390px] overflow-hidden blur-3xl">
               <motion.div
                 className="absolute inset-0 w-full h-full rounded-full blur-3xl bg-white will-change-transform"
                 style={{
