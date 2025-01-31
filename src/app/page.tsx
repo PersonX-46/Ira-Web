@@ -7,6 +7,8 @@ import { FocusCardsDemo } from "./components/MyDesigns";
 import { TimelineUI } from "./components/AllDesigns";
 import { LampDemo } from "./components/MakeUp";
 import Footer from "./components/Footer";
+import { Experience } from "./components/Experience";
+import { SkillsUI } from "./components/Skills";
 
 export default function Home() {
   return (
@@ -15,7 +17,8 @@ export default function Home() {
       <HeroSection />
       <FocusCardsDemo/>
       <LampDemo/>
-      <TimelineUI/>
+      <Experience/>
+      <SkillsUI/>
       <SocialMediaSection/>
       <Footer/>
       
