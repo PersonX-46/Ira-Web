@@ -86,7 +86,7 @@ const NavBar = () => {
                   className={`flex items-center gap-2 ${
                     button
                       ? "px-4 py-2 bg-orange-600 text-white font-medium rounded-full hover:bg-orange-700"
-                      : "text-orange-400 font-bold hover:text-orange-300"
+                      : " font-bold "
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
